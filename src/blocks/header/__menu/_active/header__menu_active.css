@@ -1,0 +1,18 @@
+.header__menu_active {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-style:  normal;
+    font-weight: 500;
+    font-size: 1.13rem;
+    text-decoration: none;
+}
+
+.header__menu_active::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top:44px;
+    width: calc(100% - 34px);
+    height: 3px;
+    background-color: #ffffff;
+}
