@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Выпускной проект">
     <meta name="author" content="Владимиров Денис">
-    <title>Что в мире творится? &mdash; Аналитика</title>
+    <title>Что в мире творится? &mdash; Сохранённые статьи</title>
     <link rel="stylesheet" type="text/css" href="<%=htmlWebpackPlugin.files.chunks.paper.css %>">
     <link rel="icon" href="../../../src/favicon/favicon.ico">
 </head>
@@ -12,7 +12,7 @@
     <main class="page">
         <header class="header">
             <div class="header__bar">
-                <a class="header__logo header__on-white" href="./index.html" title="Титульная страница" target="_blank">NewsAnalyzer</a>
+                <a class="header__logo header__on-white" href="./index.html" title="Титульная страница" target="_blank">NewsExplorer</a>
                 <ul class="header__menu">
                     <li>
                         <a href="./index.html" title="Титульная страница" target="_blank">Главная</a>
@@ -20,74 +20,70 @@
                     <li>
                         <a href="./about.html" title="Информация о сайте" target="_blank">О проекте</a>
                     </li>
+                    <li class="header__menu_active header__on-white">
+                        <p>Сохранённые статьи</p>
+                    </li>
                 </ul>
             </div> 
         </header>
-
         <section class="analytics">
-            <div class="analytics__content">
-                <h4 class="analytics__where-you-are">Главная <span class="analytics__where-you-are_color">/ Аналитика</span></h4>
-                <h2 class="analytics__question">Вы спросили: &laquo;Путешествия&raquo;</h2>
-                <p class="analytics__statistic">Новостей за неделю: <span class="analytics__statistic_bold">34324</span></p>
-                <p class="analytics__statistic">Упоминаний в заголовках: <span class="analytics__statistic_bold">235</span></p>
+            <span class="analytics__content">
+                <h4 class="analytics__where-you-are"><span class="analytics__where-you-are_color">Сохранённые статьи</span></h4>
+                <h2 class="analytics__question">Грета, у вас 5 сохранённых статей</h2>
+                <p class="analytics__statistic">По ключевым статьям: <span class="analytics__statistic_bold">Природа, Тайга</span> и <span class="analytics__statistic_bold">2 другим</span></p>
             </div>
         </section>
-        <section class="table">
-            <div class="table__content">
-                <h3 class="table__title">Аналитика по дням</h3>
-                <div class="table__header">
-                    <p class="table__header-text">Дата<br />(август)</p>
-                    <p class="table__header-text">Кол-во упоминаний</p>
-                </div>
-                <div class="table__body">
-                    <ul class="table__legend">
-                        <li class="table__legend-numbers">0</li>
-                        <li class="table__legend-numbers">25</li>
-                        <li class="table__legend-numbers">50</li>
-                        <li class="table__legend-numbers">75</li>
-                        <li class="table__legend-numbers">100</li>
-                    </ul>
-                    <ul class="table__grid">
-                        <li class="table__line">
-                            <p class="table__date">19, пн</p>
-                            <div class="table__bar">15</div>
-                        </li>
-                        <li class="table__line">
-                            <p class="table__date">20, вт</p>
-                            <div class="table__bar">18</div>
-                        </li>
-                        <li class="table__line">
-                            <p class="table__date">21, ср</p>
-                            <div class="table__bar">11</div>
-                        </li>
-                        <li class="table__line">
-                            <p class="table__date">22, чт</p>
-                            <div class="table__bar">39</div>
-                        </li>
-                        <li class="table__line">
-                            <p class="table__date">23, пт</p>
-                            <div class="table__bar">45</div>
-                        </li>
-                        <li class="table__line">
-                            <p class="table__date">24, сб</p>
-                            <div class="table__bar">73</div>
-                        </li>
-                        <li class="table__line">
-                            <p class="table__date">25, вс</p>
-                            <div class="table__bar">34</div>
-                        </li>
-                    </ul>
-                    <ul class="table__legend">
-                        <li class="table__legend-numbers">0</li>
-                        <li class="table__legend-numbers">25</li>
-                        <li class="table__legend-numbers">50</li>
-                        <li class="table__legend-numbers">75</li>
-                        <li class="table__legend-numbers">100</li>
-                    </ul>
-                </div>
+        <section class="result">
+            <div class="result__content-paper">
+                <ul class="result__news-cards">
+                    <li class="result__single-card">
+                        <img class="result__image" src="../../../src/images/image_01.jpg" alt="" />
+                        <p class="result__date">2 августа, 2019</p>
+                        <h3 class="result__news-title">Национальное достояние – парки</h3>
+                        <p class="result__news-preview">В 2016 году Америка отмечала важный юбилей: 
+                            сто лет назад здесь начала складываться система национальных парков – 
+                            охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                        <p class="result__source">Лента.ру</p>
+                    </li>
+                    <li class="result__single-card">
+                        <img class="result__image" src="../../../src/images/image_02.jpg" alt="" />
+                        <p class="result__date">2 августа, 2019</p>
+                        <h3 class="result__news-title">Лесные огоньки: история одной фотографии</h3>
+                        <p class="result__news-preview">Фотограф отвлеклась от освещения суровой 
+                            политической реальности Мексики, чтобы запечатлеть ускользающую красоту 
+                            одного из местных чудес природы.</p>
+                        <p class="result__source">Медуза</p>
+                    </li>
+                    <li class="result__single-card">
+                        <img class="result__image" src="../../../src/images/image_03.jpg" alt="" />
+                        <p class="result__date">2 августа, 2019</p>
+                        <h3 class="result__news-title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+                        <p class="result__news-preview">Знаменитый фотограф снимает первозданные 
+                            леса России, чтобы рассказать о необходимости их сохранения. В этот 
+                            раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                        <p class="result__source">РИА</p>
+                    </li>
+                    <li class="result__single-card">
+                        <img class="result__image" src="../../../src/images/image_04.jpg" alt="" />
+                        <p class="result__date">2 августа, 2019</p>
+                        <h3 class="result__news-title">Национальное достояние – парки</h3>
+                        <p class="result__news-preview">В 2016 году Америка отмечала важный юбилей: сто 
+                            лет назад здесь начала складываться система национальных парков – охраняемых 
+                            территорий, где и сегодня каждый может приобщиться к природе.</p>
+                        <p class="result__source">Дзен</p>
+                    </li>
+                    <li class="result__single-card">
+                        <img class="result__image" src="../../../src/images/image_05.jpg" alt="" />
+                        <p class="result__date">2 августа, 2019</p>
+                        <h3 class="result__news-title">Лесные огоньки: история одной фотографии</h3>
+                        <p class="result__news-preview">Фотограф отвлеклась от освещения суровой 
+                            политической реальности Мексики, чтобы запечатлеть ускользающую красоту 
+                            одного из местных чудес природы.</p>
+                        <p class="result__source">Афиша</p>
+                    </li>
+                </ul>
             </div>
         </section>
-
         <footer class="footer">
             <div class="footer__bar">
                 <a class="footer__copyright" href="./index.html" title="Титульная страница" target="_blank">&copy; 2019 Supersite</a>
@@ -105,15 +101,15 @@
                 </ul>
                 <ul class="footer__social">
                     <li>
-                        <a class="" href="https://github.com/AleksanrReva" 
+                        <a class="" href="https://github.com/denizen24" 
                         title="Перейти на страницу автора" target="_blank">
                             <img class="footer__icons" src="../../../src/favicon/github.svg" alt="Аккаунт на GitHub" />
                         </a>
                     </li>
                     <li>
-                        <a class="" href="https://vk.com/revuxorn" 
+                        <a class="" href="https://www.facebook.com/akakiy813" 
                         title="Перейти на страницу автора" target="_blank">
-                            <img class="footer__icons" src="../../../src/favicon/vk-logo.svg" alt="Аккаунт на VK" />
+                            <img class="footer__icons" src="../../../src/favicon/fb-logo.svg" alt="Аккаунт на FB" />
                         </a>
                     </li>
                 </ul>

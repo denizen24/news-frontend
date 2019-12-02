@@ -1,4 +1,6 @@
 .analytics__question {
+    width: 530px;
+    height: 92px;
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
@@ -7,6 +9,6 @@
     color: #1A1B22;
 
     margin-left: 104px;
-    margin-top: 84px;
+    margin-top: 28px;
     margin-bottom: 22px;
 }
