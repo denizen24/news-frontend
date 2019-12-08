@@ -1,9 +1,0 @@
-.header__bar {
-    max-width: 1440px;
-    margin: 0 auto;
-    background-color: rgba(196, 196, 196, 0.01);
-    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
-
-    display: flex;
-    justify-content: space-between;
-}
