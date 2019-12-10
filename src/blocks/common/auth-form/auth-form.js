@@ -1,4 +1,4 @@
-import './auth-form.css'
+import './auth.css'
 
 class AuthForm {
   constructor(domElement, goTo, submitFunction) {
